@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const PORT = require('./src/config/config');
-const db = require('./src/database/db');
-const products = require('./src/routes/products');
+const PORT = require('./lib/config/config');
+const db = require('./lib/database/db');
+const products = require('./lib/routes/products');
 
 app.use(express.json());
 app.use("/Movie/v1.0",products);
